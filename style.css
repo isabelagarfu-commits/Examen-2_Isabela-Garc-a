@@ -1,0 +1,261 @@
+
+:root {
+  --color-negro: #222222;
+  --color-contenido: #898989;
+  --color-verde: #72b529;
+  --fondo-gris: #FAFAFA;
+  --fondo-clients: #F7F7F7;
+  --fondo-footer: #2c2e2e;
+  --color-footer: #888888;
+  --menu-hover: #2293D7;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-contenido);
+  background-color: var(--fondo-gris);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-negro);
+}
+
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: var(--color-negro);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header nav a:hover {
+  color: var(--menu-hover);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--fondo-footer);
+  color: var(--color-footer);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* CTA */
+#cta {
+  background-color: var(--color-verde);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#cta h2 {
+  display: inline;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+#cta .btn {
+  font-size: 13px;
+  border-width: 2px;
+  border-color: #ffffff;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* NAVBAR transparente encima de la imagen */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+/* HERO */
+.hero-full {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 700px;
+  padding-left: 15px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.hero-text .btn {
+  padding: 10px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 80px 0;
+  background-color: var(--fondo-gris);
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: var(--color-negro);
+}
+
+.about-section .lead {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: var(--color-contenido);
+}
+
+.about-section .text-justify {
+  text-align: justify;
+  color: var(--color-contenido);
+}
+
+.feature-item i {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-verde);
+}
+
+.feature-item h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--color-negro);
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CLIENTS */
+.clients {
+  background-color: var(--fondo-clients);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.clients h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+  color: var(--color-negro);
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients-logos img {
+  max-width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.clients-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.testimonial-text i {
+  color: var(--color-verde);
+}
+
+.testimonial-text p {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
